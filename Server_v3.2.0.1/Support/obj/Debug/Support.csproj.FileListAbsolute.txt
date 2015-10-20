@@ -1,0 +1,10 @@
+C:\Users\N. H. N. D. de Silve\Desktop\ProgComp\Server\Bean\bin\Debug\Bean.dll
+C:\Users\N. H. N. D. de Silve\Desktop\ProgComp\Server\Bean\bin\Debug\Bean.pdb
+C:\Users\N. H. N. D. de Silve\Desktop\ProgComp\Server\Bean\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\N. H. N. D. de Silve\Desktop\ProgComp\Server\Bean\obj\Debug\Bean.dll
+C:\Users\N. H. N. D. de Silve\Desktop\ProgComp\Server\Bean\obj\Debug\Bean.pdb
+C:\Users\N. H. N. D. de Silve\Desktop\ProgComp\Server\Support\bin\Debug\Bean.dll
+C:\Users\N. H. N. D. de Silve\Desktop\ProgComp\Server\Support\bin\Debug\Bean.pdb
+C:\Users\N. H. N. D. de Silve\Desktop\ProgComp\Server\Support\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\N. H. N. D. de Silve\Desktop\ProgComp\Server\Support\obj\Debug\Bean.dll
+C:\Users\N. H. N. D. de Silve\Desktop\ProgComp\Server\Support\obj\Debug\Bean.pdb
