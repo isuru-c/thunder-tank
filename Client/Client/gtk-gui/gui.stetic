@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stetic-interface>
+  <configuration>
+    <images-root-path>..</images-root-path>
+    <target-gtk-version>2.12</target-gtk-version>
+  </configuration>
+  <import>
+    <widget-library name="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <widget-library name="../bin/Debug/Client.exe" internal="true" />
+  </import>
+  <widget class="Gtk.Window" id="MainWindow" design-size="453 336">
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">MainWindow</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <property name="BorderWidth">6</property>
+    <signal name="DeleteEvent" handler="OnDeleteEvent" />
+    <child>
+      <widget class="Gtk.Frame" id="frame2">
+        <property name="MemberName" />
+        <property name="ShadowType">None</property>
+        <child>
+          <widget class="Gtk.Alignment" id="GtkAlignment">
+            <property name="MemberName" />
+            <property name="Xalign">0</property>
+            <property name="Yalign">0</property>
+            <property name="LeftPadding">12</property>
+            <child>
+              <widget class="Gtk.Fixed" id="fixed2">
+                <property name="MemberName" />
+                <property name="HasWindow">False</property>
+                <child>
+                  <widget class="Gtk.Button" id="joinButton">
+                    <property name="MemberName" />
+                    <property name="CanFocus">True</property>
+                    <property name="Type">TextOnly</property>
+                    <property name="Label" translatable="yes">Join</property>
+                    <property name="UseUnderline">True</property>
+                    <signal name="Clicked" handler="joinButtonClicked" />
+                  </widget>
+                  <packing>
+                    <property name="X">157</property>
+                    <property name="Y">38</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Button" id="up">
+                    <property name="MemberName" />
+                    <property name="CanFocus">True</property>
+                    <property name="Type">TextOnly</property>
+                    <property name="Label" translatable="yes">Up</property>
+                    <property name="UseUnderline">True</property>
+                    <signal name="Clicked" handler="UpButtonCliced" />
+                  </widget>
+                  <packing>
+                    <property name="X">308</property>
+                    <property name="Y">30</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Button" id="down">
+                    <property name="MemberName" />
+                    <property name="CanFocus">True</property>
+                    <property name="Type">TextOnly</property>
+                    <property name="Label" translatable="yes">Down</property>
+                    <property name="UseUnderline">True</property>
+                    <signal name="Clicked" handler="DownButtonCliced" />
+                  </widget>
+                  <packing>
+                    <property name="X">301</property>
+                    <property name="Y">99</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Button" id="left">
+                    <property name="MemberName" />
+                    <property name="CanFocus">True</property>
+                    <property name="Type">TextOnly</property>
+                    <property name="Label" translatable="yes">Left</property>
+                    <property name="UseUnderline">True</property>
+                    <signal name="Clicked" handler="LeftButtonCliced" />
+                  </widget>
+                  <packing>
+                    <property name="X">255</property>
+                    <property name="Y">65</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Button" id="right">
+                    <property name="MemberName" />
+                    <property name="CanFocus">True</property>
+                    <property name="Type">TextOnly</property>
+                    <property name="Label" translatable="yes">Right</property>
+                    <property name="UseUnderline">True</property>
+                    <signal name="Clicked" handler="RightButtonCliced" />
+                  </widget>
+                  <packing>
+                    <property name="X">352</property>
+                    <property name="Y">64</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Button" id="shoot">
+                    <property name="MemberName" />
+                    <property name="CanFocus">True</property>
+                    <property name="Type">TextOnly</property>
+                    <property name="Label" translatable="yes">Shoot</property>
+                    <property name="UseUnderline">True</property>
+                    <signal name="Clicked" handler="ShootButonClicked" />
+                  </widget>
+                  <packing>
+                    <property name="X">287</property>
+                    <property name="Y">152</property>
+                  </packing>
+                </child>
+              </widget>
+            </child>
+          </widget>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="GtkLabel1">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">&lt;b&gt;GtkFrame&lt;/b&gt;</property>
+            <property name="UseMarkup">True</property>
+          </widget>
+          <packing>
+            <property name="type">label_item</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+</stetic-interface>
