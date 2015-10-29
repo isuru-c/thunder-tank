@@ -1,18 +1,19 @@
 using System;
 using Gtk;
 
-using System.Threading;
-
 using Client;
 
 public partial class MainWindow: Gtk.Window
 {	
-	Connection connection;
+	Tank myTank;
 
 	public MainWindow (): base (Gtk.WindowType.Toplevel)
 	{
 		Build ();
-		connection = new Connection ();
+		myTank = new Tank ();
+
+		pictureBox.
+
 	}
 
 	protected void OnDeleteEvent (object sender, DeleteEventArgs a)
@@ -23,35 +24,32 @@ public partial class MainWindow: Gtk.Window
 
 	protected void joinButtonClicked (object sender, EventArgs e)
 	{
-		connection.Send ("JOIN#");
-
-		var readingThread = new Thread (connection.Listen);
-		readingThread.Start ();
+		myTank.Connect ();
 
 	}
 
 	protected void UpButtonCliced (object sender, EventArgs e)
 	{
-		connection.Send ("UP#");
+		myTank.MoveUp ();
 	}
 
 	protected void RightButtonCliced (object sender, EventArgs e)
 	{
-		connection.Send ("RIGHT#");
+		myTank.MoveRight ();
 	}
 
 	protected void DownButtonCliced (object sender, EventArgs e)
 	{
-		connection.Send ("DOWN#");
+		myTank.MoveDown ();
 	}
 
 	protected void LeftButtonCliced (object sender, EventArgs e)
 	{
-		connection.Send ("LEFT#");
+		myTank.MoveLeft ();
 	}
 
 	protected void ShootButonClicked (object sender, EventArgs e)
 	{
-		connection.Send ("SHOOT#");
+		myTank.Shoot ();
 	}
 }

@@ -8,7 +8,7 @@
     <widget-library name="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
     <widget-library name="../bin/Debug/Client.exe" internal="true" />
   </import>
-  <widget class="Gtk.Window" id="MainWindow" design-size="453 336">
+  <widget class="Gtk.Window" id="MainWindow" design-size="761 522">
     <property name="MemberName" />
     <property name="Title" translatable="yes">MainWindow</property>
     <property name="WindowPosition">CenterOnParent</property>
@@ -29,20 +29,6 @@
                 <property name="MemberName" />
                 <property name="HasWindow">False</property>
                 <child>
-                  <widget class="Gtk.Button" id="joinButton">
-                    <property name="MemberName" />
-                    <property name="CanFocus">True</property>
-                    <property name="Type">TextOnly</property>
-                    <property name="Label" translatable="yes">Join</property>
-                    <property name="UseUnderline">True</property>
-                    <signal name="Clicked" handler="joinButtonClicked" />
-                  </widget>
-                  <packing>
-                    <property name="X">157</property>
-                    <property name="Y">38</property>
-                  </packing>
-                </child>
-                <child>
                   <widget class="Gtk.Button" id="up">
                     <property name="MemberName" />
                     <property name="CanFocus">True</property>
@@ -52,36 +38,8 @@
                     <signal name="Clicked" handler="UpButtonCliced" />
                   </widget>
                   <packing>
-                    <property name="X">308</property>
-                    <property name="Y">30</property>
-                  </packing>
-                </child>
-                <child>
-                  <widget class="Gtk.Button" id="down">
-                    <property name="MemberName" />
-                    <property name="CanFocus">True</property>
-                    <property name="Type">TextOnly</property>
-                    <property name="Label" translatable="yes">Down</property>
-                    <property name="UseUnderline">True</property>
-                    <signal name="Clicked" handler="DownButtonCliced" />
-                  </widget>
-                  <packing>
-                    <property name="X">301</property>
-                    <property name="Y">99</property>
-                  </packing>
-                </child>
-                <child>
-                  <widget class="Gtk.Button" id="left">
-                    <property name="MemberName" />
-                    <property name="CanFocus">True</property>
-                    <property name="Type">TextOnly</property>
-                    <property name="Label" translatable="yes">Left</property>
-                    <property name="UseUnderline">True</property>
-                    <signal name="Clicked" handler="LeftButtonCliced" />
-                  </widget>
-                  <packing>
-                    <property name="X">255</property>
-                    <property name="Y">65</property>
+                    <property name="X">605</property>
+                    <property name="Y">29</property>
                   </packing>
                 </child>
                 <child>
@@ -94,8 +52,36 @@
                     <signal name="Clicked" handler="RightButtonCliced" />
                   </widget>
                   <packing>
-                    <property name="X">352</property>
-                    <property name="Y">64</property>
+                    <property name="X">648</property>
+                    <property name="Y">65</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Button" id="left">
+                    <property name="MemberName" />
+                    <property name="CanFocus">True</property>
+                    <property name="Type">TextOnly</property>
+                    <property name="Label" translatable="yes">Left</property>
+                    <property name="UseUnderline">True</property>
+                    <signal name="Clicked" handler="LeftButtonCliced" />
+                  </widget>
+                  <packing>
+                    <property name="X">558</property>
+                    <property name="Y">70</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Button" id="down">
+                    <property name="MemberName" />
+                    <property name="CanFocus">True</property>
+                    <property name="Type">TextOnly</property>
+                    <property name="Label" translatable="yes">Down</property>
+                    <property name="UseUnderline">True</property>
+                    <signal name="Clicked" handler="DownButtonCliced" />
+                  </widget>
+                  <packing>
+                    <property name="X">598</property>
+                    <property name="Y">110</property>
                   </packing>
                 </child>
                 <child>
@@ -108,8 +94,31 @@
                     <signal name="Clicked" handler="ShootButonClicked" />
                   </widget>
                   <packing>
-                    <property name="X">287</property>
-                    <property name="Y">152</property>
+                    <property name="X">598</property>
+                    <property name="Y">174</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Button" id="joinButton">
+                    <property name="MemberName" />
+                    <property name="CanFocus">True</property>
+                    <property name="Type">TextOnly</property>
+                    <property name="Label" translatable="yes">Join</property>
+                    <property name="UseUnderline">True</property>
+                    <signal name="Clicked" handler="joinButtonClicked" />
+                  </widget>
+                  <packing>
+                    <property name="X">604</property>
+                    <property name="Y">232</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.DrawingArea" id="pictureBox">
+                    <property name="MemberName" />
+                  </widget>
+                  <packing>
+                    <property name="X">75</property>
+                    <property name="Y">69</property>
                   </packing>
                 </child>
               </widget>
@@ -117,7 +126,7 @@
           </widget>
         </child>
         <child>
-          <widget class="Gtk.Label" id="GtkLabel1">
+          <widget class="Gtk.Label" id="GtkLabel5">
             <property name="MemberName" />
             <property name="LabelProp" translatable="yes">&lt;b&gt;GtkFrame&lt;/b&gt;</property>
             <property name="UseMarkup">True</property>

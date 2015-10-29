@@ -11,7 +11,7 @@ public partial class MainWindow
 	private global::Gtk.Button left;
 	private global::Gtk.Button right;
 	private global::Gtk.Button shoot;
-	private global::Gtk.Label GtkLabel1;
+	private global::Gtk.Label GtkLabel5;
 
 	protected virtual void Build ()
 	{
@@ -95,11 +95,11 @@ public partial class MainWindow
 		w6.Y = 152;
 		this.GtkAlignment.Add (this.fixed2);
 		this.frame2.Add (this.GtkAlignment);
-		this.GtkLabel1 = new global::Gtk.Label ();
-		this.GtkLabel1.Name = "GtkLabel1";
-		this.GtkLabel1.LabelProp = global::Mono.Unix.Catalog.GetString ("<b>GtkFrame</b>");
-		this.GtkLabel1.UseMarkup = true;
-		this.frame2.LabelWidget = this.GtkLabel1;
+		this.GtkLabel5 = new global::Gtk.Label ();
+		this.GtkLabel5.Name = "GtkLabel1";
+		this.GtkLabel5.LabelProp = global::Mono.Unix.Catalog.GetString ("<b>GtkFrame</b>");
+		this.GtkLabel5.UseMarkup = true;
+		this.frame2.LabelWidget = this.GtkLabel5;
 		this.Add (this.frame2);
 		if ((this.Child != null)) {
 			this.Child.ShowAll ();
