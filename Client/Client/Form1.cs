@@ -12,11 +12,13 @@ namespace Client
     public partial class Form1 : Form
     {
         Tank myTank;
+        Map map;
 
         public Form1()
         {
             InitializeComponent();
-            myTank = new Tank();
+            map = new Map(10);
+            myTank = new Tank(new Parser(map));
         }
 
         private void UpButton_Click(object sender, EventArgs e)

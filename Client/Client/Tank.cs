@@ -11,9 +11,9 @@ namespace Client
     {
         Connection connection;
 
-        public Tank()
+        public Tank(Parser parser)
         {
-            connection = new Connection();
+            connection = new Connection(parser);
         }
 
         public void Connect()

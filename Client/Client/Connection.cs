@@ -19,9 +19,11 @@ namespace Client
         private NetworkStream serverListenStream; //Stream - incoming        
         private TcpListener listener; //To listen to the clinets  
 
-        public Connection()
-        {
+        private Parser parser;
 
+        public Connection(Parser parser)
+        {
+            this.parser = parser;
         }
 
         public void Send(String msg)
@@ -44,7 +46,7 @@ namespace Client
                     Byte[] tempStr = Encoding.ASCII.GetBytes(msg);
 
                     this.serverWriter.Write(tempStr);
-                    Console.WriteLine("  Data: " + msg + " is written to " + serverIP + " on " + sendingPort);
+                    //Console.WriteLine("  Data: " + msg + " is written to " + serverIP + " on " + sendingPort);                    
                     this.serverWriter.Close();
                     this.serverWriteStream.Close();
                 }
@@ -90,6 +92,7 @@ namespace Client
                         }
 
                         String msg = Encoding.UTF8.GetString(inputStr.ToArray());
+                        parser.UpdateMap(msg);
 
                         this.serverListenStream.Close();
 
