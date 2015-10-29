@@ -1,44 +1,52 @@
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 
 using System.Threading;
 
 namespace Client
 {
-	public class Tank
-	{
-		Connection connection;
+    class Tank
+    {
+        Connection connection;
 
-		public Tank ()
-		{
-			connection = new Connection ();
-		}
+        public Tank()
+        {
+            connection = new Connection();
+        }
 
-		public void Connect(){
-			connection.Send ("JOIN#");
+        public void Connect()
+        {
+            connection.Send("JOIN#");
 
-			var readingThread = new Thread (connection.Listen);
-			readingThread.Start ();
-		}
+            var readingThread = new Thread(connection.Listen);
+            readingThread.Start();
+        }
 
-		public void MoveUp(){
-			connection.Send ("UP#");
-		}
+        public void MoveUp()
+        {
+            connection.Send("UP#");
+        }
 
-		public void MoveRight(){
-			connection.Send ("RIGHT#");
-		}
+        public void MoveRight()
+        {
+            connection.Send("RIGHT#");
+        }
 
-		public void MoveDown(){
-			connection.Send ("DOWN#");
-		}
+        public void MoveDown()
+        {
+            connection.Send("DOWN#");
+        }
 
-		public void MoveLeft(){
-			connection.Send ("LEFT#");
-		}
+        public void MoveLeft()
+        {
+            connection.Send("LEFT#");
+        }
 
-		public void Shoot(){
-			connection.Send ("SHOOT#");
-		}
-	}
+        public void Shoot()
+        {
+            connection.Send("SHOOT#");
+        }
+    }
 }
-

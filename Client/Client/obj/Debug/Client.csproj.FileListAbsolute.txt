@@ -1,0 +1,8 @@
+C:\Users\bmCSoft\Desktop\ggg\thunder-tank\Client\Client\bin\Debug\Client.exe
+C:\Users\bmCSoft\Desktop\ggg\thunder-tank\Client\Client\bin\Debug\Client.pdb
+C:\Users\bmCSoft\Desktop\ggg\thunder-tank\Client\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
+C:\Users\bmCSoft\Desktop\ggg\thunder-tank\Client\Client\obj\Debug\Client.Form1.resources
+C:\Users\bmCSoft\Desktop\ggg\thunder-tank\Client\Client\obj\Debug\Client.Properties.Resources.resources
+C:\Users\bmCSoft\Desktop\ggg\thunder-tank\Client\Client\obj\Debug\Client.csproj.GenerateResource.Cache
+C:\Users\bmCSoft\Desktop\ggg\thunder-tank\Client\Client\obj\Debug\Client.exe
+C:\Users\bmCSoft\Desktop\ggg\thunder-tank\Client\Client\obj\Debug\Client.pdb
