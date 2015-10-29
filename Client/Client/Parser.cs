@@ -19,8 +19,8 @@ namespace Client
         public void UpdateMap(String newCome)
         {
             Console.WriteLine(newCome);
-            char x = newCome[0];
-            switch (x)
+            char xx = newCome[0];
+            switch (xx)
             {
                 case 'I':
                     {
@@ -32,12 +32,12 @@ namespace Client
                         for (int i = 0; i < bricks.Length; ++i)
                         {
                             String[] bc = bricks[i].Split(',');
-                            int row = Int32.Parse(bc[0]);
-                            int col = Int32.Parse(bc[1]);
+                            int x = Int32.Parse(bc[0]);
+                            int y = Int32.Parse(bc[1]);
 
-                            Brick b = new Brick(100);
+                            Brick b = new Brick(0);
 
-                            map.setSpot(row, col, b);
+                            map.setSpot(x, y, b);
                         }
 
                         //adding stones
@@ -45,12 +45,12 @@ namespace Client
                         for (int i = 0; i < stones.Length; ++i)
                         {
                             String[] st = stones[i].Split(',');
-                            int row = Int32.Parse(st[0]);
-                            int col = Int32.Parse(st[1]);
+                            int x = Int32.Parse(st[0]);
+                            int y = Int32.Parse(st[1]);
 
                             Stone s = new Stone();
 
-                            map.setSpot(row, col, s);
+                            map.setSpot(x, y, s);
                         }
 
 
@@ -59,21 +59,65 @@ namespace Client
                         for (int i = 0; i < water.Length; ++i)
                         {
                             String[] wt = water[i].Split(',');
-                            int row = Int32.Parse(wt[0]);
-                            int col = Int32.Parse(wt[1]);
+                            int x = Int32.Parse(wt[0]);
+                            int y = Int32.Parse(wt[1]);
 
                             Water w = new Water();
 
-                            map.setSpot(row, col, w);
+                            map.setSpot(x, y, w);
                         }
                         break;
                     }
                 case 'G':
+                    {
+                        String str = newCome.Substring(2, newCome.Length - 4);
+                        String[] sub = str.Split(':');
 
-                    break;
+                        map.RemovePlayers();
+
+                        for (int i = 0; i < sub.Length - 1; ++i)
+                        {
+                            String[] sub2 = sub[i].Split(';');
+                            String name = sub2[0];
+
+                            String[] cor = sub2[1].Split(',');
+                            int x = Int32.Parse(cor[0]);
+                            int y = Int32.Parse(cor[1]);
+
+                            int direction = Int32.Parse(sub2[2]);
+                            int whetherShot = Int32.Parse(sub2[3]);
+                            int health = Int32.Parse(sub2[4]);
+                            int coin = Int32.Parse(sub2[5]);
+                            int points = Int32.Parse(sub2[6]);
+
+                            Player p = new Player(name, direction, whetherShot, health, coin, points);
+
+                            map.setSpot(x, y, p);
+                        }
+
+                        String[] bricks = sub[sub.Length - 1].Split(';');
+
+                        for (int i = 0; i < bricks.Length; ++i)
+                        {
+                            String[] subb = bricks[i].Split(',');
+
+                            int x = Int32.Parse(subb[0]);
+                            int y = Int32.Parse(subb[1]);
+                            int damage = Int32.Parse(subb[2]);
+
+                            Brick b = new Brick(damage);
+
+                            map.setSpot(x, y, b);
+                        }
+
+                            break;
+                    }
                 case 'L':
+                    {
 
-                    break;
+
+                        break;
+                    }
                 case 'C':
 
                     break;

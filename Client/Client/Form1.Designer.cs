@@ -34,11 +34,13 @@
             this.DownButton = new System.Windows.Forms.Button();
             this.JoinButton = new System.Windows.Forms.Button();
             this.ShootButton = new System.Windows.Forms.Button();
+            this.mp = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.mp)).BeginInit();
             this.SuspendLayout();
             // 
             // UpButton
             // 
-            this.UpButton.Location = new System.Drawing.Point(440, 81);
+            this.UpButton.Location = new System.Drawing.Point(601, 384);
             this.UpButton.Name = "UpButton";
             this.UpButton.Size = new System.Drawing.Size(72, 34);
             this.UpButton.TabIndex = 0;
@@ -48,7 +50,7 @@
             // 
             // RightButton
             // 
-            this.RightButton.Location = new System.Drawing.Point(500, 127);
+            this.RightButton.Location = new System.Drawing.Point(673, 424);
             this.RightButton.Name = "RightButton";
             this.RightButton.Size = new System.Drawing.Size(72, 34);
             this.RightButton.TabIndex = 1;
@@ -58,7 +60,7 @@
             // 
             // LeftButton
             // 
-            this.LeftButton.Location = new System.Drawing.Point(366, 127);
+            this.LeftButton.Location = new System.Drawing.Point(527, 424);
             this.LeftButton.Name = "LeftButton";
             this.LeftButton.Size = new System.Drawing.Size(72, 34);
             this.LeftButton.TabIndex = 2;
@@ -68,7 +70,7 @@
             // 
             // DownButton
             // 
-            this.DownButton.Location = new System.Drawing.Point(440, 179);
+            this.DownButton.Location = new System.Drawing.Point(601, 464);
             this.DownButton.Name = "DownButton";
             this.DownButton.Size = new System.Drawing.Size(72, 34);
             this.DownButton.TabIndex = 3;
@@ -78,7 +80,7 @@
             // 
             // JoinButton
             // 
-            this.JoinButton.Location = new System.Drawing.Point(440, 12);
+            this.JoinButton.Location = new System.Drawing.Point(601, 330);
             this.JoinButton.Name = "JoinButton";
             this.JoinButton.Size = new System.Drawing.Size(72, 34);
             this.JoinButton.TabIndex = 4;
@@ -88,7 +90,7 @@
             // 
             // ShootButton
             // 
-            this.ShootButton.Location = new System.Drawing.Point(440, 252);
+            this.ShootButton.Location = new System.Drawing.Point(601, 424);
             this.ShootButton.Name = "ShootButton";
             this.ShootButton.Size = new System.Drawing.Size(72, 34);
             this.ShootButton.TabIndex = 5;
@@ -96,11 +98,20 @@
             this.ShootButton.UseVisualStyleBackColor = true;
             this.ShootButton.Click += new System.EventHandler(this.ShootButton_Click);
             // 
+            // mp
+            // 
+            this.mp.Location = new System.Drawing.Point(12, 12);
+            this.mp.Name = "mp";
+            this.mp.Size = new System.Drawing.Size(500, 500);
+            this.mp.TabIndex = 6;
+            this.mp.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(643, 438);
+            this.ClientSize = new System.Drawing.Size(837, 516);
+            this.Controls.Add(this.mp);
             this.Controls.Add(this.ShootButton);
             this.Controls.Add(this.JoinButton);
             this.Controls.Add(this.DownButton);
@@ -109,6 +120,9 @@
             this.Controls.Add(this.UpButton);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
+            ((System.ComponentModel.ISupportInitialize)(this.mp)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -121,6 +135,7 @@
         private System.Windows.Forms.Button DownButton;
         private System.Windows.Forms.Button JoinButton;
         private System.Windows.Forms.Button ShootButton;
+        private System.Windows.Forms.PictureBox mp;
     }
 }
 

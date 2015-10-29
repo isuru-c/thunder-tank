@@ -53,7 +53,7 @@ namespace Client
             }
             catch (Exception e)
             {
-                Console.WriteLine("Connecting failed.");
+                Console.WriteLine("Connecting failed. : "+e.Message );
             }
             finally
             {

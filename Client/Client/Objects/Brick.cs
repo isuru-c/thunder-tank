@@ -7,11 +7,11 @@ namespace Client.Objects
 {
     class Brick : MapObject
     {
-        int strength { get; set; }
+        int damage { get; set; }
 
-        public Brick(int strength)
+        public Brick(int damage)
         {
-            this.strength = strength;
+            this.damage = damage;
         }
     }
 }

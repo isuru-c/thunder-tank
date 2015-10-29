@@ -9,7 +9,7 @@ namespace Client
     class Map
     {
         MapObject[][] map;
-        int mapSize;
+        public int mapSize { get; set; }
 
         String name{get; set;}
 
@@ -24,14 +24,28 @@ namespace Client
             }
         }
 
-        public void setSpot(int row, int col, MapObject g)
+        public void setSpot(int x, int y, MapObject mapObject)
         {
-            map[row][col] = g;
+            map[x][y] = mapObject;
         }
         
-        public MapObject getSpot(int row, int col)
+        public MapObject getSpot(int x, int y)
         {
-            return map[row][col];
+            return map[x][y];
+        }
+
+        public void RemovePlayers()
+        {
+            for (int i = 0; i < mapSize; ++i)
+            {
+                for (int j = 0; j < mapSize; ++j)
+                {
+                    if (map[i][j] == null)
+                        continue;
+                    else if (map[i][j] is Player)
+                        map[i][j] = null;
+                }
+            }
         }
     }
 }
