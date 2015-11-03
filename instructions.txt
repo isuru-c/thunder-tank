@@ -1,1 +1,3 @@
 this is an instruction
+
+Run the server and connect the client to the server
