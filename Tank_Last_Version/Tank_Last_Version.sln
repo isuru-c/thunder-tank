@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tank_Last_Version", "Tank_Last_Version\Tank_Last_Version\Tank_Last_Version.csproj", "{3E5FCDDF-E93C-4D98-B0D4-8DA314BB2FFC}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "Tank_Last_VersionContent", "Tank_Last_Version\Tank_Last_VersionContent\Tank_Last_VersionContent.contentproj", "{9B26274B-5903-4A8C-B532-8B9CAE41AFB5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E5FCDDF-E93C-4D98-B0D4-8DA314BB2FFC}.Debug|x86.ActiveCfg = Debug|x86
+		{3E5FCDDF-E93C-4D98-B0D4-8DA314BB2FFC}.Debug|x86.Build.0 = Debug|x86
+		{3E5FCDDF-E93C-4D98-B0D4-8DA314BB2FFC}.Release|x86.ActiveCfg = Release|x86
+		{3E5FCDDF-E93C-4D98-B0D4-8DA314BB2FFC}.Release|x86.Build.0 = Release|x86
+		{9B26274B-5903-4A8C-B532-8B9CAE41AFB5}.Debug|x86.ActiveCfg = Debug|x86
+		{9B26274B-5903-4A8C-B532-8B9CAE41AFB5}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
